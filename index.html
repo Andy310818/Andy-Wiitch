@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Fog Guide — Guia para iniciantes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="fog-bg"></div>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">†</span><span>THE FOG <b>GUIDE</b></span></a>
+  <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+  <nav>
+    <a class="active" href="index.html">Início</a>
+    <a href="comece-aqui.html">Comece Aqui</a>
+    <a href="sobrevivente.html">Sobrevivente</a>
+    <a href="killer.html">Killer</a>
+    <a href="builds.html">Builds</a>
+    <a href="dicionario.html">Dicionário</a>
+    <a href="quiz.html">Quiz</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <span class="eyebrow">GUIA NÃO OFICIAL • FEITO PARA QUEM ESTÁ COMEÇANDO</span>
+    <h1>ENTRE NA<br><em>NÉVOA.</em></h1>
+    <p>Aprenda o básico de Dead by Daylight sem se perder em dezenas de informações. Descubra o que fazer, quando fazer e por quê.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="comece-aqui.html">COMEÇAR AGORA <span>→</span></a>
+      <button class="btn btn-ghost" data-open="decision">O QUE EU FAÇO AGORA?</button>
+    </div>
+    <div class="hero-note"><span class="pulse-dot"></span> Construído para iniciantes • aprendizado em etapas</div>
+  </div>
+  <div class="hero-symbol" aria-hidden="true">
+    <div class="sigil">†</div>
+    <div class="rings"></div>
+  </div>
+</section>
+
+<section class="section intro-grid">
+  <div>
+    <span class="section-kicker">PRIMEIRO PASSO</span>
+    <h2>Não sabe por onde começar?</h2>
+    <p class="lead">Você não precisa aprender tudo de uma vez. Escolha seu lado e siga uma trilha simples.</p>
+  </div>
+  <div class="role-grid">
+    <a class="role-card survivor" href="sobrevivente.html">
+      <span class="role-icon">◈</span>
+      <span class="role-label">SOBREVIVENTE</span>
+      <strong>Aprenda a sobreviver</strong>
+      <small>Objetivos, chase, loops, pallets, resgates e endgame.</small>
+      <span class="card-arrow">→</span>
+    </a>
+    <a class="role-card killer" href="killer.html">
+      <span class="role-icon">✦</span>
+      <span class="role-label">KILLER</span>
+      <strong>Aprenda a caçar</strong>
+      <small>Perseguição, pressão, ganchos, geradores e mindgames.</small>
+      <span class="card-arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<section class="section journey-section">
+  <div class="section-heading">
+    <div><span class="section-kicker">SUA JORNADA</span><h2>Do primeiro jogo ao domínio da Névoa.</h2></div>
+    <a href="comece-aqui.html" class="text-link">Ver trilha completa →</a>
+  </div>
+  <div class="journey">
+    <div class="journey-line"></div>
+    <a href="comece-aqui.html" class="journey-step current"><span>01</span><b>Comece aqui</b><small>Entenda o básico</small></a>
+    <a href="sobrevivente.html" class="journey-step"><span>02</span><b>Objetivos</b><small>Saiba o que fazer</small></a>
+    <a href="sobrevivente.html#chase" class="journey-step"><span>03</span><b>Chase</b><small>Aprenda a fugir</small></a>
+    <a href="sobrevivente.html#loops" class="journey-step"><span>04</span><b>Loops</b><small>Use o mapa</small></a>
+    <a href="killer.html#mindgames" class="journey-step"><span>05</span><b>Mindgames</b><small>Leia seu adversário</small></a>
+    <a href="builds.html" class="journey-step"><span>06</span><b>Builds</b><small>Monte seu estilo</small></a>
+  </div>
+</section>
+
+<section class="section now-section">
+  <div class="now-panel">
+    <div class="now-copy">
+      <span class="section-kicker">ASSISTENTE RÁPIDO</span>
+      <h2>O que eu faço <em>agora?</em></h2>
+      <p>Escolha uma situação e receba uma orientação curta e prática.</p>
+    </div>
+    <div class="now-options">
+      <button data-open="survivor-gen">Sou Survivor e estou no gerador</button>
+      <button data-open="survivor-chase">O Killer está vindo</button>
+      <button data-open="survivor-hook">Meu companheiro está no Hook</button>
+      <button data-open="killer-chase">Sou Killer e estou em Chase</button>
+      <button data-open="killer-gen">Os geradores estão avançando</button>
+      <button data-open="endgame">O último gerador terminou</button>
+    </div>
+  </div>
+</section>
+
+<section class="section feature-grid">
+  <a class="feature-card" href="dicionario.html"><span>⌕</span><h3>Dicionário DBD</h3><p>Não sabe o que significa “loop”, “slug” ou “3-gen”? Pesquise.</p></a>
+  <a class="feature-card" href="builds.html"><span>◒</span><h3>Builds por objetivo</h3><p>Escolha o que quer aprender e encontre uma combinação simples.</p></a>
+  <a class="feature-card" href="quiz.html"><span>?</span><h3>Teste seu conhecimento</h3><p>Um quiz curto para descobrir se os fundamentos estão claros.</p></a>
+</section>
+</main>
+
+<footer><div class="brand">THE FOG <b>GUIDE</b></div><p>Projeto educacional não oficial inspirado em Dead by Daylight.</p></footer>
+
+<div class="modal" id="decision" aria-hidden="true"><div class="modal-box"><button class="modal-close">×</button><span class="section-kicker">ORIENTAÇÃO</span><h2 id="modal-title">O que fazer agora?</h2><p id="modal-text"></p><a id="modal-link" class="btn btn-primary" href="comece-aqui.html">APRENDER MAIS →</a></div></div>
+<script src="script.js"></script>
+</body>
+</html>
